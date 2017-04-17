@@ -1,0 +1,728 @@
+{  
+   "autocomplete":{  
+      "topic":{  
+         "motivation":[  
+            true,
+            true
+         ],
+         "romantic":[  
+            true,
+            true
+         ],
+         "romentic":[  
+            true,
+            true
+         ],
+         "sad":[  
+            true,
+            true,
+            true,
+            true
+         ],
+         "jokes":[  
+            true
+         ],
+         "hear_a_song":[  
+            true
+         ],
+         "rock":[  
+            true,
+            true,
+            true
+         ],
+         "love_advice":[  
+            true,
+            true
+         ],
+         "chill":[  
+            true,
+            true,
+            true,
+            true,
+            true
+         ]
+      },
+      "topics":{  
+         "motivation":true,
+         "romantic":true,
+         "jokes":true,
+         "romentic":true,
+         "sad":true,
+         "romantic_":true,
+         "hear_a_song":true,
+         "rock":true,
+         "love_advice":true,
+         "chill":true
+      },
+      "user":{  
+         "g_Name":true,
+         "g_Location":true,
+         "g_Organization":true,
+         "g_Ordinal":true,
+         "g_Cardinal":true,
+         "g_Number":true,
+         "g_Percent":true,
+         "g_Flight Number":true,
+         "g_DateTime":true,
+         "g_DiseaseName":true,
+         "user_first_name":true,
+         "user_last_name":true,
+         "user_profile_pic":true,
+         "user_locale":true,
+         "user_timezone":true,
+         "user_gender":true,
+         "user_is_payment_enabled":true
+      },
+      "entity":{  
+         "sad":[  
+            true,
+            true
+         ]
+      }
+   },
+   "initial_flow":0,
+   "name":"chilax bot",
+   "flows":[  
+      {  
+         "flow_id":"58f49ab10825a9e116b015ca",
+         "change_to":null,
+         "name":"consultant flow",
+         "graph":[  
+            {  
+               "nodeName":"welcome node",
+               "outputs":[  
+                  {  
+                     "Text":[  
+                        1
+                     ]
+                  }
+               ],
+               "className":"in",
+               "position":{  
+                  "y":162,
+                  "x":64
+               },
+               "options":{  
+                  "responses":[  
+                     {  
+                        "content":"welcome dear friend,if you are stressed,feeling down,in bad mood,heart broken or tensed,you came to the right place i can help you by lightning your mood ,lifting up your spirit....",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"do you want to hear some joke,want some love advice,need some motivation,hear a song.... just tell me :)",
+                        "type":"text"
+                     }
+                  ]
+               },
+               "name":"User Input"
+            },
+            {  
+               "nodeName":"new node 1",
+               "outputs":[  
+                  {  
+                     "Jokes":[  
+                        2
+                     ]
+                  },
+                  {  
+                     "Motivation":[  
+                        3
+                     ]
+                  },
+                  {  
+                     "Love Advice":[  
+                        10
+                     ]
+                  },
+                  {  
+                     "Hear A Song":[  
+                        5
+                     ]
+                  }
+               ],
+               "className":"core",
+               "position":{  
+                  "y":94,
+                  "x":254
+               },
+               "options":{  
+                  "topics":[  
+                     {  
+                        "jokes":[  
+                           "i am feeling sad",
+                           "i am stressed",
+                           "send me jokes",
+                           "send me a joke",
+                           "joke",
+                           "i am in a bad mood",
+                           "i want a joke",
+                           "i want jokes",
+                           "i will go for jokes",
+                           "i will go for joke",
+                           "joke it is",
+                           "send me an awsome joke",
+                           "send me some good jokes",
+                           "jokes",
+                           "want to hear a joke",
+                           "hear a joke"
+                        ]
+                     },
+                     {  
+                        "motivation":[  
+                           "i want motivation",
+                           "motivate me",
+                           "send me motivational stuff",
+                           "send me motivational quote",
+                           "send me a motivational quote",
+                           "send me motivational quote",
+                           "need motivation",
+                           "i need motivation",
+                           "motivation",
+                           "motivation needed"
+                        ]
+                     },
+                     {  
+                        "love_advice":[  
+                           "i love a girl",
+                           "i loved a girl",
+                           "i am in love with a girl",
+                           "want some love advice",
+                           "need some love advice",
+                           "love",
+                           "i love a boy",
+                           "i loved a boy",
+                           "i am in love with a boy",
+                           "i  need some love advice",
+                           "i have a crush",
+                           "i have a crush on",
+                           "she broke my heart",
+                           "he broke my heart"
+                        ]
+                     },
+                     {  
+                        "hear_a_song":[  
+                           "i want to hear a song",
+                           "want to hear a sad song",
+                           "i want to hear love songs",
+                           "play sad song",
+                           "play love song",
+                           "play a song",
+                           "play music",
+                           "music",
+                           "song",
+                           "i wanna hear a song"
+                        ]
+                     }
+                  ],
+                  "autocompleteList":[  
+                     "weather",
+                     "relationships",
+                     "fashion",
+                     "pets"
+                  ]
+               },
+               "name":"Topic Selector"
+            },
+            {  
+               "nodeName":"jokes",
+               "outputs":[  
+                  {  
+                     "Response":[  
+                        4
+                     ]
+                  }
+               ],
+               "className":"res",
+               "position":{  
+                  "y":8,
+                  "x":763
+               },
+               "options":{  
+                  "responses":[  
+                     {  
+                        "content":"My wife and I were happy for twenty years. Then we met.\n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"I just asked my husband if he remembers what today is... Scaring men is easy.\n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"A good wife always forgives her husband when she's wrong.\n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"Wife: \"I look fat. Can you give me a compliment?\" Husband: \"You have perfect eyesight.\"\n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"Every time you talk to your wife, your mind should remember that... 'This conversation will be recorded for Training and Quality purpose\n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"Girl: You would be a good dancer except for two things. \nBoy: What are the two things? \nGirl: Your feet. ",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"Dad: Son, what do u want for ur birthday?\nSon:  Not much dad, Just a radio with a sports car around it. \n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"Diner:  I can't eat such a rotten chicken. Call the manager!\nWaiter:  It's no use. He won't eat it either.",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"Man: Officer! There's a bomb in my garden!\nOfficer: Don't worry. If no one claims it within three days, you  can keep it. ",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"I heard Microsoft bought Skype for 8.5 billion USD.\nBimbos… why didn’t they just download it like everyone else?",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"I’ve read so many horrible things about drinking and smoking recently that I made a new, firm New Year’s resolution: NO MORE READING!",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"A family of mice was surprised by a big cat. Father Mouse jumped and said, \"Bow-wow!\" The cat ran away. \"What was that, Father?\" asked Baby Mouse. \"Well, son, that's why it's important to learn a second language.\" \n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"What is the longest word in the English language? \nSMILES: there is a mile between the first and last letters!\" ",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"Can a kangaroo jump higher than a house? Of course, a house doesn’t jump at all.\n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"When I was young I didn't like going to weddings.\nMy grandmother would tell me, \"You're next\"\nHowever, she stopped doing that after I started saying the same thing to her at funerals.",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"https://s-media-cache-ak0.pinimg.com/736x/44/09/77/4409771fca1c1f97c8b35119e8a4c8f0.jpg",
+                        "type":"image"
+                     },
+                     {  
+                        "content":"https://s-media-cache-ak0.pinimg.com/736x/c9/b9/a2/c9b9a204a0d450c3e92a12d3c0d37042.jpg",
+                        "type":"image"
+                     }
+                  ]
+               },
+               "name":"Random"
+            },
+            {  
+               "nodeName":"motivation",
+               "outputs":[  
+                  {  
+                     "Response":[  
+                        4,
+                        4
+                     ]
+                  }
+               ],
+               "className":"res",
+               "position":{  
+                  "y":138,
+                  "x":658
+               },
+               "options":{  
+                  "responses":[  
+                     {  
+                        "content":"\"What you declare, you will achieve !\"\n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"\"Hope for the Best, Prepare for the Worst and Expect Nothing.\"\n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"“It takes courage to grow up and become who you really are.”\t\n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"“I realized early on that success was tied to not giving up. Most people in this business gave up and went on to other things. \n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"If you simply didn’t give up, you would outlast the people who came in on the bus with you.”\n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"http://www.motivationalwellbeing.com/wp-content/uploads/2012/07/motivational-sayings.jpg",
+                        "type":"image"
+                     },
+                     {  
+                        "content":"http://www.motivationalwellbeing.com/wp-content/uploads/2012/12/dream-quotes-1.jpg",
+                        "type":"image"
+                     },
+                     {  
+                        "content":"http://www.motivationalwellbeing.com/wp-content/uploads/2013/05/actionquotes.jpg",
+                        "type":"image"
+                     },
+                     {  
+                        "content":"https://www.youtube.com/watch?v=314BSmoRPPE&feature=youtu.be",
+                        "type":"video"
+                     },
+                     {  
+                        "content":"https://www.youtube.com/watch?v=h_yJ0wfRiIY\n",
+                        "type":"video"
+                     }
+                  ]
+               },
+               "name":"Random"
+            },
+            {  
+               "nodeName":"new node 2",
+               "outputs":[  
+
+               ],
+               "className":"out",
+               "position":{  
+                  "y":224,
+                  "x":1135
+               },
+               "options":{  
+                  "facebook":{  
+                     "access_token":"EAATto1hbE8UBANPtSbfYU61dmtAYlNtvXDjkHfoBMLZA4PUvLjzQf5pR13GZBKhWi9qOqZA3AyVoJTAYkFix6hEgfZBtek9iAQWB2GfmGL0idBv4fZAdEsdrYDjiZAfpenRuyZCRKyi6oOZCVkFFChzuq70vZBtY5nRcZD",
+                     "category":"Computer Company",
+                     "perms":[  
+                        "ADMINISTER",
+                        "EDIT_PROFILE",
+                        "CREATE_CONTENT",
+                        "MODERATE_CONTENT",
+                        "CREATE_ADS",
+                        "BASIC_ADMIN"
+                     ],
+                     "name":"Testing",
+                     "id":"1825554887685128"
+                  },
+                  "slack":{  
+
+                  },
+                  "httpAPI":{  
+
+                  }
+               },
+               "name":"Bot Messenger"
+            },
+            {  
+               "nodeName":"which song",
+               "outputs":[  
+                  {  
+                     "Sad":[  
+                        9
+                     ]
+                  },
+                  {  
+                     "Chill":[  
+                        8
+                     ]
+                  },
+                  {  
+                     "Romentic":[  
+                        7
+                     ]
+                  },
+                  {  
+                     "Rock":[  
+                        6
+                     ]
+                  }
+               ],
+               "className":"core",
+               "position":{  
+                  "y":483,
+                  "x":597
+               },
+               "options":{  
+                  "topics":[  
+                     {  
+                        "sad":[  
+                           "sad",
+                           "sad song",
+                           "sad songs",
+                           "play sad songs",
+                           "play a sad song",
+                           "play sad music"
+                        ]
+                     },
+                     {  
+                        "chill":[  
+                           "chill",
+                           "chil",
+                           "chilling song",
+                           "chilling songs",
+                           "chill song",
+                           "play a chill song"
+                        ]
+                     },
+                     {  
+                        "romentic":[  
+                           "romentic songs",
+                           "romentic song",
+                           "play romentic song",
+                           "play a romentic song",
+                           "romentic"
+                        ]
+                     },
+                     {  
+                        "rock":[  
+                           "rock",
+                           "play rock",
+                           "play rock music",
+                           "i want to hear rock music",
+                           "rock music"
+                        ]
+                     }
+                  ],
+                  "autocompleteList":[  
+                     "weather",
+                     "relationships",
+                     "fashion",
+                     "pets"
+                  ]
+               },
+               "name":"Topic Selector"
+            },
+            {  
+               "nodeName":"rock",
+               "outputs":[  
+                  {  
+                     "Response":[  
+                        4
+                     ]
+                  }
+               ],
+               "className":"res",
+               "position":{  
+                  "y":464,
+                  "x":916
+               },
+               "options":{  
+                  "responses":[  
+                     {  
+                        "content":"https://www.youtube.com/watch?v=pXRviuL6vMY\n",
+                        "type":"video"
+                     },
+                     {  
+                        "content":"https://www.youtube.com/watch?v=UprcpdwuwCg\n",
+                        "type":"video"
+                     },
+                     {  
+                        "content":"https://www.youtube.com/watch?v=RRKJiM9Njr8\n",
+                        "type":"video"
+                     },
+                     {  
+                        "content":"https://www.youtube.com/watch?v=9jK-NcRmVcw&index=21&list=PLhd1HyMTk3f5PzRjJzmzH7kkxjfdVoPPj",
+                        "type":"video"
+                     }
+                  ]
+               },
+               "name":"Random"
+            },
+            {  
+               "nodeName":"romentic",
+               "outputs":[  
+                  {  
+                     "Response":[  
+                        4
+                     ]
+                  }
+               ],
+               "className":"res",
+               "position":{  
+                  "y":512,
+                  "x":1079
+               },
+               "options":{  
+                  "responses":[  
+                     {  
+                        "content":"https://www.youtube.com/watch?v=-KPnyf8vwXI\n",
+                        "type":"video"
+                     },
+                     {  
+                        "content":"https://www.youtube.com/watch?v=xwjwCFZpdns\n",
+                        "type":"video"
+                     },
+                     {  
+                        "content":"https://www.youtube.com/watch?v=C_3d6GntKbk\n",
+                        "type":"video"
+                     },
+                     {  
+                        "content":"https://www.youtube.com/watch?v=Wd2B8OAotU8\n",
+                        "type":"video"
+                     },
+                     {  
+                        "content":"https://www.youtube.com/watch?v=JGwWNGJdvx8\n",
+                        "type":"video"
+                     }
+                  ]
+               },
+               "name":"Random"
+            },
+            {  
+               "nodeName":"chill",
+               "outputs":[  
+                  {  
+                     "Response":[  
+                        4
+                     ]
+                  }
+               ],
+               "className":"res",
+               "position":{  
+                  "y":647,
+                  "x":1022
+               },
+               "options":{  
+                  "responses":[  
+                     {  
+                        "content":"https://www.youtube.com/watch?v=I3mrYxPLSH4\n",
+                        "type":"video"
+                     },
+                     {  
+                        "content":"https://www.youtube.com/watch?v=Yifz3X_i-F8\n",
+                        "type":"video"
+                     },
+                     {  
+                        "content":"https://www.youtube.com/watch?v=acHKPu4oIro\n",
+                        "type":"video"
+                     },
+                     {  
+                        "content":"https://www.youtube.com/watch?v=Wd2B8OAotU8\n",
+                        "type":"video"
+                     }
+                  ]
+               },
+               "name":"Random"
+            },
+            {  
+               "nodeName":"sad",
+               "outputs":[  
+                  {  
+                     "Response":[  
+                        4
+                     ]
+                  }
+               ],
+               "className":"res",
+               "position":{  
+                  "y":373,
+                  "x":779
+               },
+               "options":{  
+                  "responses":[  
+                     {  
+                        "content":"https://www.youtube.com/watch?v=bSfpSOBD30U\n",
+                        "type":"video"
+                     },
+                     {  
+                        "content":"https://www.youtube.com/watch?v=RgKAFK5djSk\n",
+                        "type":"video"
+                     },
+                     {  
+                        "content":"https://www.youtube.com/watch?v=TdrL3QxjyVw\n",
+                        "type":"video"
+                     }
+                  ]
+               },
+               "name":"Random"
+            },
+            {  
+               "nodeName":"love",
+               "outputs":[  
+                  {  
+                     "Response":[  
+                        4
+                     ]
+                  }
+               ],
+               "className":"res",
+               "position":{  
+                  "y":286,
+                  "x":546
+               },
+               "options":{  
+                  "responses":[  
+                     {  
+                        "content":"Love doesn't hurt; loving the wrong person does.",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"To love is nothing. To be loved is something. But to love and be loved, that’s everything",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"If you feel lonely, you’re better off being alone.\n\n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"Know when to walk away.\n\n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"You can gauge a person’s love for you by how they treat you when they are upset with you.\n\n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"When a lightbulb goes out, you fix the lightbulb. You don’t get a new house.\n\n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"Just because you love each other does not mean that you’re good together long-term.\n\n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"No relationship is perfect and there will be conflict. What matters is the desire to solve the problem.\n\n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"Don’t look for a girl you want to treat like a princess, look for a girl you want to treat like a partner.\n\n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"There are a number of people you can be compatible with. No one is perfect. You have to work at love.\n\n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"You’re not required to set yourself on fire to keep other people warm.\n\n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"Marry the one who gives you the same feeling you get when you see food coming at a restaurant.\n\n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"Just because you liked the friend-version of someone doesn’t mean you’ll like the relationship-version of them.\n\n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"It takes two happy individuals to make a happy relationship.\n\n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"If you love the memories more than the relationship, it’s time to move on.\n\n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"If you’re keeping score you already lost.\n\n",
+                        "type":"text"
+                     },
+                     {  
+                        "content":"If it feels wrong at the beginning, it probably won’t get better.\n\n",
+                        "type":"text"
+                     }
+                  ]
+               },
+               "name":"Random"
+            }
+         ]
+      }
+   ],
+   "change_to":{  
+      "58f49ab10825a9e116b015ca":{  
+         "58f5085d0825a9e116b0db0f":true
+      }
+   }
+}
